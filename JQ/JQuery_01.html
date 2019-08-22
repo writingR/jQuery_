@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- 선택자 예제 -->
+
+<script>
+$(document).ready(function(){
+  
+  <!-- 태그 선택자 -->
+  $("p").click(function(){
+    $(this).hide();
+  });
+  
+  <!-- 아이디 선택자 -->
+  $("#h1").mouseenter(function(){
+	    alert("Hello!")
+	  });
+  
+  <!-- 클래스 선택자 -->
+  $(".h2").dblclick(function(){
+	    $(this).hide();
+	  });
+  
+});
+</script>
+</head>
+<body>
+
+<!-- 제이쿼리 선택자 + Event  -->
+<p>If you click on me, I will disappear.</p>
+<h1 id="h1">Enter this paragraph.</p>
+<h2 class="h2">Click me too!</p>
+
+</body>
+</html>
